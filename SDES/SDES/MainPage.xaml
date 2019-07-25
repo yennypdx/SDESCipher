@@ -12,13 +12,13 @@
         <TextBlock x:Name="KeyText" HorizontalAlignment="Left" Margin="98,223,0,0" Text="Generate a 10bit encryption key" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32"/>
         <TextBox x:Name="CreateKeyBox" HorizontalAlignment="Left" Margin="23,364,0,0" Text="TextBox" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
         <TextBlock x:Name="EncryptText" HorizontalAlignment="Left" Margin="516,231,0,0" Text="Encrypt PlainText" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32"/>
-        <TextBlock x:Name="DecryptText" HorizontalAlignment="Left" Margin="971,231,0,0" Text="Decrypt EncryptedText" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="325" FontSize="32" SelectionChanged="TextBlock_Copy1_SelectionChanged"/>
+        <TextBlock x:Name="DecryptText" HorizontalAlignment="Left" Margin="971,231,0,0" Text="Decrypt EncryptedText" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="325" FontSize="32" />
         <TextBox x:Name="PlainTextBox" HorizontalAlignment="Left" Margin="447,364,0,0" Text="TextBox" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
         <TextBox x:Name="EncryptedTextBox" HorizontalAlignment="Left" Margin="950,364,0,0" Text="TextBox" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
         <Button x:Name="GenerateKeyBtn" Content="Generate Key" Margin="132,451,0,0" VerticalAlignment="Top" Height="49" Width="158"/>
         <Button x:Name="GenerateEncryptTextBtn" Content="Encrypt Text" Margin="556,451,0,0" VerticalAlignment="Top" Height="49" Width="158"/>
-        <Button x:Name="GenerateDecryptTextBtn" Content="Decrypt Text" Margin="1059,451,0,0" VerticalAlignment="Top" Height="49" Width="158"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="410,122,0,0" Text="SDES Simple Encoder and Decoder" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="42" Height="69" Width="745"/>
+        <TextBlock x:Name="MainTitle" HorizontalAlignment="Left" Margin="410,122,0,0" Text="SDES Simple Encoder and Decoder" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="42" Height="69" Width="745"/>
+        <Button x:Name="GeneratePlainTextBtn" Content="Decrypt Text" Margin="1059,451,0,0" VerticalAlignment="Top" Height="49" Width="158"/>
 
     </Grid>
 </Page>
