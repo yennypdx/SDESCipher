@@ -98,9 +98,9 @@ namespace SDES
             List<int> combinedOutputForFinalPermutation = lib.CombineTwoLists(outputSecondProcess, outputFirstProcess);
 
             // get cyphered text and build to string
-            List<int> cipheredList = lib.FinalPermutation(combinedOutputForFinalPermutation);
+            List<int> plaintextList = lib.FinalPermutation(combinedOutputForFinalPermutation);
 
-            return lib.ConvertListOfIntToString(cipheredList);
+            return lib.ConvertListOfIntToString(plaintextList);
         }
     }
 }
