@@ -1,1 +1,1 @@
-C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\SDES.csproj;x64
+F:\Crypto_SDES\SDES\SDES\SDES.csproj;x64
