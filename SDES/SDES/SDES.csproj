@@ -120,11 +120,10 @@
     </Compile>
     <Compile Include="DecryptionSDES.cs" />
     <Compile Include="EncryptionSDES.cs" />
-<<<<<<< HEAD
+<!--<<<<<<< HEAD -->
     <Compile Include="LibrarySDES.cs" />
-=======
     <Compile Include="KeyGenerator.cs" />
->>>>>>> 7ce081dd4cfca78395ba30bc59b135f760ac0fae
+<!-- >>>>>>> 7ce081dd4cfca78395ba30bc59b135f760ac0fae -->
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
