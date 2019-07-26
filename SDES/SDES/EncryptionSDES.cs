@@ -34,7 +34,7 @@ namespace SDES
             //  expanding the right-four-bits
             List<int> outputPone = lib.PermutateRightFourBits(pinitRightFourBits);
 
-            // XOR the outputPone with [key1]
+            /* <<<<<<<< xor with [key1] >>>>>>>> */
             List<int> outputXor = lib.FirstExorEvaluation(outputPone, keyOneList);
 
             // split outputXor into two  
@@ -64,7 +64,7 @@ namespace SDES
             // start SECOND ROUND process
             List<int> expandedOutputFirstProcess = lib.PermutateRightFourBits(outputFirstProcess);
 
-            // xor with [key2]
+            /* <<<<<<<< xor with [key2] >>>>>>>> */
             List<int> outputXorRight = lib.FirstExorEvaluation(expandedOutputFirstProcess, keyTwoList);
 
             // split outputXorRight into two  xor-left-four-bits and xor-right-four-bits

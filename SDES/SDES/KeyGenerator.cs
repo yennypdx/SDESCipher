@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SDES
 {
@@ -26,13 +23,10 @@ namespace SDES
                 input[5]
             };
 
-
             var resultKey = string.Join("", permuteOne.ToArray());
 
             var keyPartOne = resultKey.Substring(0, 5);
             var keyPartTwo = resultKey.Substring(5, 5);
-
-
 
             keyPartOne = LeftShiftString(keyPartOne);
             keyPartTwo = LeftShiftString(keyPartTwo);
@@ -57,8 +51,6 @@ namespace SDES
             };
 
             keyOne = string.Join("", permuteTwo.ToArray());
-
-
 
             return keyOne + keyTwo;
         }

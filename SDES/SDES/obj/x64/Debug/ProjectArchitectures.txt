@@ -1,1 +1,0 @@
-F:\Crypto_SDES\SDES\SDES\SDES.csproj;x64
