@@ -133,7 +133,6 @@ C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\bin\x64\Debug\
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\bin\x64\Debug\System.Xml.XDocument.dll
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\bin\x64\Debug\System.Xml.XmlDocument.dll
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\bin\x64\Debug\System.Xml.XmlSerializer.dll
-C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\SDES.csproj.CopyComplete
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\SDES.exe
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\SDES.pdb
@@ -216,7 +215,6 @@ C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\ProjectArchitectures.txt
-C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758840200000000.json
 F:\Crypto_SDES\SDES\SDES\bin\x64\Debug\App.xbf
 F:\Crypto_SDES\SDES\SDES\bin\x64\Debug\MainPage.xbf
 F:\Crypto_SDES\SDES\SDES\bin\x64\Debug\SDES.xr.xml
@@ -435,3 +433,4 @@ F:\Crypto_SDES\SDES\SDES\obj\x64\Debug\qualifiers.txt
 F:\Crypto_SDES\SDES\SDES\obj\x64\Debug\qualifiers.txt.intermediate
 F:\Crypto_SDES\SDES\SDES\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 F:\Crypto_SDES\SDES\SDES\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\obj\x64\Debug\SDES.csprojAssemblyReference.cache
