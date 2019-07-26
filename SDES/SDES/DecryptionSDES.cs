@@ -2,16 +2,16 @@
 
 namespace SDES
 {
-   public class EncryptionSDES
+    public class DecryptionSDES
     {
         LibrarySDES lib = new LibrarySDES();
-        public EncryptionSDES() { }
-        public string EncryptionMode(string key1, string key2, string plainTextFromUser)
+        public DecryptionSDES() { }
+        public string DecryptionMode(string key1, string key2, string plainTextFromUser)
         {
-            return Encryption(key1, key2, plainTextFromUser);
+            return Decryption(key1, key2, plainTextFromUser);
         }
 
-        private string Encryption(string key1, string key2, string plainText)
+        private string Decryption(string key1, string key2, string plainText)
         {
             List<int> keyOneList = lib.ConvertStringToIntList(key1);
             List<int> keyTwoList = lib.ConvertStringToIntList(key2);
@@ -23,24 +23,26 @@ namespace SDES
             // split outputPinit to two four-bits blocks
             List<int> pinitLeftFourBits = new List<int>();
             List<int> pinitRightFourBits = new List<int>();
-            for (int i = 0; i < initText.Count; i++){
+            for (int i = 0; i < initText.Count; i++)
+            {
                 var tempVal = outputPinit[i];
                 if (i < 4)
                     pinitLeftFourBits.Add(tempVal);
-                else 
+                else
                     pinitRightFourBits.Add(tempVal);
             }
 
             //  expanding the right-four-bits
             List<int> outputPone = lib.PermutateRightFourBits(pinitRightFourBits);
 
-            // XOR the outputPone with [key1]
-            List<int> outputXor = lib.FirstExorEvaluation(outputPone, keyOneList);
+            // XOR the outputPone with [key2]
+            List<int> outputXor = lib.FirstExorEvaluation(outputPone, keyTwoList);
 
             // split outputXor into two  
             List<int> xorLeftFourBits = new List<int>();
             List<int> xorRightFourBits = new List<int>();
-            for (int i = 0; i < outputXor.Count; i++) {
+            for (int i = 0; i < outputXor.Count; i++)
+            {
                 var tempVal = outputXor[i];
                 if (i < 4)
                     xorLeftFourBits.Add(tempVal);
@@ -64,13 +66,14 @@ namespace SDES
             // start SECOND ROUND process
             List<int> expandedOutputFirstProcess = lib.PermutateRightFourBits(outputFirstProcess);
 
-            // xor with [key2]
-            List<int> outputXorRight = lib.FirstExorEvaluation(expandedOutputFirstProcess, keyTwoList);
+            // xor with [Key1]
+            List<int> outputXorRight = lib.FirstExorEvaluation(expandedOutputFirstProcess, keyOneList);
 
             // split outputXorRight into two  xor-left-four-bits and xor-right-four-bits
             List<int> xorLeftFourBitsTwo = new List<int>();
             List<int> xorRightFourBitsTwo = new List<int>();
-            for (int i = 0; i < outputXorRight.Count; i++){
+            for (int i = 0; i < outputXorRight.Count; i++)
+            {
                 var tempVal = outputXorRight[i];
                 if (i < 4)
                     xorLeftFourBitsTwo.Add(tempVal);
@@ -98,6 +101,6 @@ namespace SDES
             List<int> cipheredList = lib.FinalPermutation(combinedOutputForFinalPermutation);
 
             return lib.ConvertListOfIntToString(cipheredList);
-        }        
-   }
+        }
+    }
 }
