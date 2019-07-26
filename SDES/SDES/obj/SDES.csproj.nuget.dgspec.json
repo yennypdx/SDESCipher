@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Crypto_SDES\\SDES\\SDES\\SDES.csproj": {}
+    "C:\\Users\\duper\\Dropbox\\OIT\\CST407 Cryptograph\\SDES\\SDES\\SDES\\SDES\\SDES.csproj": {}
   },
   "projects": {
-    "F:\\Crypto_SDES\\SDES\\SDES\\SDES.csproj": {
+    "C:\\Users\\duper\\Dropbox\\OIT\\CST407 Cryptograph\\SDES\\SDES\\SDES\\SDES\\SDES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Crypto_SDES\\SDES\\SDES\\SDES.csproj",
+        "projectUniqueName": "C:\\Users\\duper\\Dropbox\\OIT\\CST407 Cryptograph\\SDES\\SDES\\SDES\\SDES\\SDES.csproj",
         "projectName": "SDES",
-        "projectPath": "F:\\Crypto_SDES\\SDES\\SDES\\SDES.csproj",
-        "packagesPath": "C:\\Users\\Yenny Wright\\.nuget\\packages\\",
-        "outputPath": "F:\\Crypto_SDES\\SDES\\SDES\\obj\\",
+        "projectPath": "C:\\Users\\duper\\Dropbox\\OIT\\CST407 Cryptograph\\SDES\\SDES\\SDES\\SDES\\SDES.csproj",
+        "packagesPath": "C:\\Users\\duper\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\duper\\Dropbox\\OIT\\CST407 Cryptograph\\SDES\\SDES\\SDES\\SDES\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Yenny Wright\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\duper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.15063"
