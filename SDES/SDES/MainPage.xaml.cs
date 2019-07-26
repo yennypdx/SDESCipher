@@ -30,23 +30,39 @@ namespace SDES
             this.InitializeComponent();
         }
 
-        private void GenerateKeyBtn_Click(object sender, RoutedEventArgs e)
+        private async void GenerateKeyBtn_Click(object sender, RoutedEventArgs e)
         {
-            var generateKey = new KeyGenerator();
+            var check = CreateKeyBox.Text.All(c => "01".Contains(c));
+            if (check && CreateKeyBox.Text.Length == 10)
+            {
+                var generateKey = new KeyGenerator();
 
-            var key = generateKey.GenerateKeys(CreateKeyBox.Text);
-            keyOne = key.Substring(0, 8);
-            keyTwo = key.Substring(8, 8);
+                var key = generateKey.GenerateKeys(CreateKeyBox.Text);
+                keyOne = key.Substring(0, 8);
+                keyTwo = key.Substring(8, 8);
 
-            KeyOne.Text = keyOne;
-            KeyTwo.Text = keyTwo;
+                KeyOne.Text = keyOne;
+                KeyTwo.Text = keyTwo;
+            }
+            else
+            {
+                await new MessageDialog("Not a valid format. Please enter binary equal to 10 digits", "Error").ShowAsync();
+            }
         }
 
-        private void GenerateEncryptTextBtn_Click(object sender, RoutedEventArgs e)
+        private async void GenerateEncryptTextBtn_Click(object sender, RoutedEventArgs e)
         {
-            var encrypt = new EncryptionSDES();
+            var check = CreateKeyBox.Text.All(c => "01".Contains(c));
+            if (keyOne != null && PlainTextBox.Text.Length == 8 && check)
+            {
+                var encrypt = new EncryptionSDES();
 
-            CipherText.Text = encrypt.EncryptionMode(keyOne, keyTwo, PlainTextBox.Text);
+                CipherText.Text = encrypt.EncryptionMode(keyOne, keyTwo, PlainTextBox.Text);
+            }
+            else
+            {
+                await new MessageDialog("Please generate a key first and make sure you enter 8 digit binary.", "Error").ShowAsync();
+            }
         }
     }
 }

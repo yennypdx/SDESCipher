@@ -9,24 +9,27 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:ConnectionId='1' x:Name="KeyText" HorizontalAlignment="Left" Margin="98,223,0,0" Text="Generate a 10bit encryption key" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32"/>
-        <TextBox x:ConnectionId='2' x:Name="CreateKeyBox" HorizontalAlignment="Left" Margin="23,364,0,0" Text="TextBox" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
-        <TextBlock x:ConnectionId='3' x:Name="EncryptText" HorizontalAlignment="Left" Margin="516,231,0,0" Text="Encrypt PlainText" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32"/>
-        <TextBlock x:ConnectionId='4' x:Name="DecryptText" HorizontalAlignment="Left" Margin="971,231,0,0" Text="Decrypt EncryptedText" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="325" FontSize="32" />
-        <TextBox x:ConnectionId='5' x:Name="PlainTextBox" HorizontalAlignment="Left" Margin="447,364,0,0" Text="TextBox" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
-        <TextBox x:ConnectionId='6' x:Name="EncryptedTextBox" HorizontalAlignment="Left" Margin="950,364,0,0" Text="TextBox" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
-        <Button x:ConnectionId='7' x:Name="GenerateKeyBtn" Content="Generate Key" Margin="132,451,0,0" VerticalAlignment="Top" Height="49" Width="158"                             />
-        <Button x:ConnectionId='8' x:Name="GenerateEncryptTextBtn" Content="Encrypt Text" Margin="556,451,0,0" VerticalAlignment="Top" Height="49" Width="158"                                     />
-        <TextBlock x:ConnectionId='9' x:Name="MainTitle" HorizontalAlignment="Left" Margin="410,122,0,0" Text="SDES Simple Encoder and Decoder" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="42" Height="69" Width="745"/>
-        <Button x:ConnectionId='10' x:Name="GeneratePlainTextBtn" Content="Decrypt Text" Margin="1059,451,0,0" VerticalAlignment="Top" Height="49" Width="158"/>
-        <TextBlock x:ConnectionId='11' x:Name="KeyOneLabel" HorizontalAlignment="Left" Margin="98,548,0,0" Text="Key1:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='12' x:Name="KeyTwoLabel" HorizontalAlignment="Left" Margin="98,582,0,0" Text="Key1:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='13' x:Name="KeyOne" HorizontalAlignment="Left" Margin="154,548,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
-        <TextBlock x:ConnectionId='14' x:Name="KeyTwo" HorizontalAlignment="Left" Margin="154,582,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="191"/>
-        <TextBlock x:ConnectionId='15' x:Name="CipherTextLabel" HorizontalAlignment="Left" Margin="526,542,0,0" Text="Encrypted Text:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='16' x:Name="CipherText" HorizontalAlignment="Left" Margin="526,576,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
-        <TextBlock x:ConnectionId='17' x:Name="DecryptTextLabel" HorizontalAlignment="Left" Margin="971,542,0,0" Text="Decrypted Text:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='18' x:Name="PlainText" HorizontalAlignment="Left" Margin="971,576,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/vietnam-attractions.jpg" />
+        </Grid.Background>
+        <TextBlock x:ConnectionId='1' x:Name="KeyText" Foreground ="White" HorizontalAlignment="Left" Margin="23,231,0,0" Text="Generate Keys With 10bit binary" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="361" FontSize="32" FontWeight="Bold"/>
+        <TextBox x:ConnectionId='2' x:Name="CreateKeyBox" HorizontalAlignment="Left" Margin="23,364,0,0" Text="" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
+        <TextBlock x:ConnectionId='3' x:Name="EncryptText" Foreground="White" HorizontalAlignment="Left" Margin="447,231,0,0" Text="Encrypt PlainText" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='4' x:Name="DecryptText" HorizontalAlignment="Left" Margin="885,231,0,0" Text="Decrypt EncryptedText" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="325" FontSize="32" FontWeight="Bold" />
+        <TextBox x:ConnectionId='5' x:Name="PlainTextBox" HorizontalAlignment="Left" Margin="447,364,0,0" Text="" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
+        <TextBox x:ConnectionId='6' x:Name="EncryptedTextBox" HorizontalAlignment="Left" Margin="885,364,0,0" Text="" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
+        <Button x:ConnectionId='7' x:Name="GenerateKeyBtn" Foreground="White" Content="Generate Key" Margin="110,451,0,0" VerticalAlignment="Top" Height="49" Width="187"                              FontSize="24" FontWeight="Bold"/>
+        <Button x:ConnectionId='8' x:Name="GenerateEncryptTextBtn" Foreground="White" Content="Encrypt Text" Margin="556,451,0,0" VerticalAlignment="Top" Height="49" Width="194"                                      FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='9' x:Name="MainTitle" HorizontalAlignment="Left" Margin="211,100,0,0" Text="SDES Phongnanator Encoder and Decoder" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="42" Height="69" Width="907" />
+        <Button x:ConnectionId='10' x:Name="GeneratePlainTextBtn" Foreground="White" Content="Decrypt Text" Margin="994,451,0,0" VerticalAlignment="Top" Height="49" Width="168" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='11' x:Name="KeyOneLabel" Foreground="White" HorizontalAlignment="Left" Margin="25,548,0,0" Text="Key1:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='12' x:Name="KeyTwoLabel" Foreground="White" HorizontalAlignment="Left" Margin="25,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"><Run Text="Key2"/><Run Text=":"/></TextBlock>
+        <TextBlock x:ConnectionId='13' x:Name="KeyOne" Foreground="Yellow" HorizontalAlignment="Left" Margin="98,548,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='14' x:Name="KeyTwo" Foreground="Yellow" HorizontalAlignment="Left" Margin="98,630,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" FontSize="24" Height="32" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='15' x:Name="CipherTextLabel" Foreground="White" HorizontalAlignment="Left" Margin="447,548,0,0" Text="Encrypted Text:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='16' x:Name="CipherText" Foreground="Yellow" HorizontalAlignment="Left" Margin="447,630,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='17' x:Name="DecryptTextLabel" Foreground="White" HorizontalAlignment="Left" Margin="894,554,0,0" Text="Decrypted Text:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='18' x:Name="PlainText" Foreground="Yellow" HorizontalAlignment="Left" Margin="887,630,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="384" FontSize="24" FontWeight="Bold"/>
 
     </Grid>
 </Page>

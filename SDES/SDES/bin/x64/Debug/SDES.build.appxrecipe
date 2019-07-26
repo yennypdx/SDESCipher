@@ -370,6 +370,9 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\Assets\vietnam-attractions.jpg">
+      <PackagePath>Assets\vietnam-attractions.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\duper\Dropbox\OIT\CST407 Cryptograph\SDES\SDES\SDES\SDES\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
