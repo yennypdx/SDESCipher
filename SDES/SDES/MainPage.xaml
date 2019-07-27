@@ -21,7 +21,7 @@
         <Button x:Name="GenerateKeyBtn" Foreground="White" Content="Generate Key" Margin="110,451,0,0" VerticalAlignment="Top" Height="49" Width="187" Click="GenerateKeyBtn_Click" FontSize="24" FontWeight="Bold"/>
         <Button x:Name="GenerateEncryptTextBtn" Foreground="White" Content="Encrypt Text" Margin="556,451,0,0" VerticalAlignment="Top" Height="49" Width="194" Click="GenerateEncryptTextBtn_Click" FontSize="24" FontWeight="Bold"/>
         <TextBlock x:Name="MainTitle" HorizontalAlignment="Left" Margin="211,100,0,0" Text="SDES Phongnanator Encoder and Decoder" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="42" Height="69" Width="907" />
-        <Button x:Name="GeneratePlainTextBtn" Foreground="White" Content="Decrypt Text" Margin="994,451,0,0" VerticalAlignment="Top" Height="49" Width="168" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="GeneratePlainTextBtn" Foreground="White" Content="Decrypt Text" Margin="994,451,0,0" VerticalAlignment="Top" Height="49" Width="168" FontSize="24" FontWeight="Bold" Click="GeneratePlainTextBtn_Click"/>
         <TextBlock x:Name="KeyOneLabel" Foreground="White" HorizontalAlignment="Left" Margin="25,548,0,0" Text="Key1:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <TextBlock x:Name="KeyTwoLabel" Foreground="White" HorizontalAlignment="Left" Margin="25,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"><Run Text="Key2"/><Run Text=":"/></TextBlock>
         <TextBlock x:Name="KeyOne" Foreground="Yellow" HorizontalAlignment="Left" Margin="98,548,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" FontSize="24" FontWeight="Bold"/>

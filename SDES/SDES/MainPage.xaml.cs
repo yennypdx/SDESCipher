@@ -64,5 +64,20 @@ namespace SDES
                 await new MessageDialog("Please generate a key first and make sure you enter 8 digit binary.", "Error").ShowAsync();
             }
         }
+
+        private async void GeneratePlainTextBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var check = CreateKeyBox.Text.All(c => "01".Contains(c));
+            if (keyOne != null && EncryptedTextBox.Text.Length == 8 && check)
+            {
+                var decrypt = new DecryptionSDES();
+
+                PlainText.Text = decrypt.DecryptionMode(keyOne, keyTwo, EncryptedTextBox.Text);
+            }
+            else
+            {
+                await new MessageDialog("Please generate a key first and make sure you enter 8 digit binary.", "Error").ShowAsync();
+            }
+        }
     }
 }
