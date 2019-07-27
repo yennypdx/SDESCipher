@@ -79,5 +79,18 @@ namespace SDES
                 await new MessageDialog("Please generate a key first and make sure you enter 8 digit binary.", "Error").ShowAsync();
             }
         }
+
+        private void ResetBtn_Click(object sender, RoutedEventArgs e)
+        {
+            keyOne = "";
+            keyTwo = "";
+            KeyOne.Text = "";
+            KeyTwo.Text = "";
+            CipherText.Text = "";
+            PlainText.Text = "";
+            CreateKeyBox.Text = "";
+            PlainTextBox.Text = "";
+            EncryptedTextBox.Text = "";
+        }
     }
 }

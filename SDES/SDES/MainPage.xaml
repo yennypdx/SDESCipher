@@ -14,7 +14,7 @@
         </Grid.Background>
         <TextBlock x:Name="KeyText" Foreground ="White" HorizontalAlignment="Left" Margin="23,231,0,0" Text="Generate Keys With 10bit binary" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="361" FontSize="32" FontWeight="Bold"/>
         <TextBox x:Name="CreateKeyBox" HorizontalAlignment="Left" Margin="23,364,0,0" Text="" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
-        <TextBlock x:Name="EncryptText" Foreground="White" HorizontalAlignment="Left" Margin="447,231,0,0" Text="Encrypt PlainText" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32" FontWeight="Bold"/>
+        <TextBlock x:Name="EncryptText" Foreground="White" HorizontalAlignment="Left" Margin="447,231,0,0" Text="Encrypt 8bit PlainText" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="256" FontSize="32" FontWeight="Bold"/>
         <TextBlock x:Name="DecryptText" HorizontalAlignment="Left" Margin="885,231,0,0" Text="Decrypt EncryptedText" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="325" FontSize="32" FontWeight="Bold" />
         <TextBox x:Name="PlainTextBox" HorizontalAlignment="Left" Margin="447,364,0,0" Text="" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
         <TextBox x:Name="EncryptedTextBox" HorizontalAlignment="Left" Margin="885,364,0,0" Text="" VerticalAlignment="Top" Height="43" Width="375" FontSize="24"/>
@@ -30,6 +30,7 @@
         <TextBlock x:Name="CipherText" Foreground="Yellow" HorizontalAlignment="Left" Margin="447,630,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="365" FontSize="24" FontWeight="Bold"/>
         <TextBlock x:Name="DecryptTextLabel" Foreground="White" HorizontalAlignment="Left" Margin="894,554,0,0" Text="Decrypted Text:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <TextBlock x:Name="PlainText" Foreground="Yellow" HorizontalAlignment="Left" Margin="887,630,0,0" Text="Will Appear With Input" TextWrapping="Wrap" VerticalAlignment="Top" Width="384" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="ResetBtn" Foreground="White" Content="Reset" Margin="1073,100,0,0" VerticalAlignment="Top" Height="56" Width="161" FontWeight="Bold" FontSize="24" Click="ResetBtn_Click"/>
 
     </Grid>
 </Page>
