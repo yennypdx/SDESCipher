@@ -31,28 +31,28 @@ namespace SDES
         public List<int> InitialPermutation(List<int> inputList)
         {
             List<int> output = new List<int>();
-            output.Add(inputList[3]);
-            output.Add(inputList[0]);
-            output.Add(inputList[2]);
-            output.Add(inputList[4]);
-            output.Add(inputList[6]);
-            output.Add(inputList[1]);
-            output.Add(inputList[7]);
-            output.Add(inputList[5]);
+            output.Add(inputList[3]); // 0>3
+            output.Add(inputList[0]); // 1>0
+            output.Add(inputList[2]); // 2>2
+            output.Add(inputList[4]); // 3>4
+            output.Add(inputList[6]); // 4>6
+            output.Add(inputList[1]); // 5>1
+            output.Add(inputList[7]); // 6>7
+            output.Add(inputList[5]); // 7>5
             return output;
         }
 
         public List<int> PermutateRightFourBits(List<int> inputList)
         {
             List<int> output = new List<int>();
-            output.Add(inputList[3]);
-            output.Add(inputList[0]);
-            output.Add(inputList[1]);
-            output.Add(inputList[2]);
-            output.Add(inputList[1]);
-            output.Add(inputList[2]);
-            output.Add(inputList[3]);
-            output.Add(inputList[0]);
+            output.Add(inputList[3]); // 0>3
+            output.Add(inputList[0]); // 1>0
+            output.Add(inputList[1]); // 2>1
+            output.Add(inputList[2]); // 3>2
+            output.Add(inputList[1]); // 4>1
+            output.Add(inputList[2]); // 5>2
+            output.Add(inputList[3]); // 6>3
+            output.Add(inputList[0]); // 7>0
             return output;
         }
 
@@ -176,10 +176,10 @@ namespace SDES
         public List<int> PermutateFourBitsFromSTables(List<int> inputList)
         {
             List<int> output = new List<int>();
-            output.Add(inputList[3]);
-            output.Add(inputList[0]);
-            output.Add(inputList[2]);
-            output.Add(inputList[1]);
+            output.Add(inputList[3]); // 0>3
+            output.Add(inputList[0]); // 1>0
+            output.Add(inputList[2]); // 2>2
+            output.Add(inputList[1]); // 3>1
             return output;
         }
 
@@ -204,14 +204,14 @@ namespace SDES
         public List<int> FinalPermutation(List<int> inputList)
         {
             List<int> output = new List<int>();
-            output.Add(inputList[1]);
-            output.Add(inputList[4]);
-            output.Add(inputList[2]);
-            output.Add(inputList[0]);
-            output.Add(inputList[5]);
-            output.Add(inputList[7]);
-            output.Add(inputList[3]);
-            output.Add(inputList[6]);
+            output.Add(inputList[1]); // 0>1
+            output.Add(inputList[5]); // 1>5
+            output.Add(inputList[2]); // 2>2
+            output.Add(inputList[0]); // 3>0
+            output.Add(inputList[3]); // 4>3
+            output.Add(inputList[7]); // 5>7
+            output.Add(inputList[4]); // 6>4
+            output.Add(inputList[6]); // 7>6
             return output;
         }
     }
